@@ -30,5 +30,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Sawakawako/dsh-novelai-studio"
+  },
+  "dependencies": {
+    "undici": "^8.10.0"
   }
 }

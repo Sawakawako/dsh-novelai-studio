@@ -13,8 +13,9 @@ DSH 生图可视化互动窗口：在对话输入栏右侧加入「🎨 生图�
   - 右：Token（只写不回显）/ 模型 / 宽高 / 步数 / 种子 / 生成张数 / 图生图开关
 - **批量生成**：一次 1~4 张（`n_samples`），多图网格展示，每张独立下载
 - **图生图（img2img）**：选择本地源图 → 改图强度 `strength`（0~1，默认 0.7）+ 噪声强度 `noise`（0~1，默认 0），参数与 NovelAI 官网一致
-- **模型列表**：V5 / V4.5 / V4 / V3 全系列（`nai-diffusion-5-full`、`nai-diffusion-4-5-curated` 等），默认 `nai-diffusion-4-5-curated`
-- **Host 代理**：浏览器不直连 NovelAI（CORS），统一走本地端点转发，Token 只在 host 侧
+- **模型列表**：V5 / V4.5 / V4 / V3 实测可用模型（`nai-diffusion-5-full`、`nai-diffusion-4-5-curated`、`nai-diffusion-4-full`、`nai-diffusion-4-curated-preview`、`nai-diffusion-3`、`nai-diffusion-furry-3`），默认 `nai-diffusion-4-5-curated`；已被官方移除的旧 ID（V2/XL/safe 等）不再列出
+- **V4+ 结构化请求**：自动携带 `v4_prompt`/`v4_negative_prompt` 与数字 `ucPreset`（官方 API 要求，缺了会 500），V5 自动用 Karras 噪声调度
+- **Host 代理**：浏览器不直连 NovelAI（CORS），统一走本地端点转发，Token 只在 host 侧；host 自动探测系统代理（直连失败时经 Windows 代理转发，兼容 clash 等代理工具）
 
 ## 安装
 1. 把 `dsh-novelai-studio` 放到 `~/.dsh/local-plugins/`
