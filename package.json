@@ -1,0 +1,33 @@
+{
+  "name": "dsh-novelai-studio",
+  "version": "0.1.0",
+  "description": "DSH 生图可视化互动窗口：对话输入栏右侧按钮，弹出 NovelAI 生图工作室（文生图/图生图/批量生成 + 参数 + 多图预览）。",
+  "type": "module",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "COMPLIANCE.md"
+  ],
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sawakawako/dsh-novelai-studio"
+  }
+}

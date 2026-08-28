@@ -1,0 +1,5 @@
+# dsh-novelai-studio bundle patch：向 web profile 注入生图工作室插件。
+# host 侧注册 NovelAI 代理端点 + 设置命名空间；client 侧挂载入口按钮与弹窗。
+- insert:
+    - id: dsh-novelai-studio
+      name: dsh-novelai-studio
