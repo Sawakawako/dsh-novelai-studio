@@ -9,7 +9,8 @@
     "lib/client.js",
     "cordis.patch.yml",
     "README.md",
-    "COMPLIANCE.md"
+    "COMPLIANCE.md",
+    "LICENSE"
   ],
   "exports": {
     ".": "./src/index.js",
